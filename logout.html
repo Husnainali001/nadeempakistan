@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <style>
+        /* Basic reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .logout-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .logout-container h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .logout-container p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .logout-container a {
+            text-decoration: none;
+            color: #0072ff;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .logout-container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logout-container">
+        <h2>You have successfully logged out!</h2>
+        <p>We hope to see you again soon.</p>
+        <p>You will be redirected to the Home Page shortly.</p>
+        <p>If you are not redirected, <a href="index.html">click here</a> to go to the Home Page.</p>
+    </div>
+
+    <script>
+        // Automatically redirect to the home page after 3 seconds
+        setTimeout(function() {
+            window.location.href = "index.html"; // Change to your homepage or login page URL
+        }, 3000);
+    </script>
+
+</body>
+</html>
